@@ -29,14 +29,22 @@ export default class Dashboard extends React.Component {
 
 
 var React = require('react');
-var sa = require('superagent');
+//var sa = require('superagent');
 module.exports = React.createClass({
 
     handleClick:function() {
-        sa.get('/teste').end(function(err,res){
+     /*   sa.get('/teste').end(function(err,res){
           alert(err||res.text);
           console.log(err||res.text);
+        });*/
+
+        sa.get('/getAllTutorial').end(function(err,res){
+            alert(err||res.text);
+            console.log(res.body);
+            //alert(err||res.text);
+
         });
+
         var x = 27;
         var y = 400 ;
         var z = x + y;

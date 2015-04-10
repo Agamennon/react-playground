@@ -20,7 +20,7 @@ config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
-    proxy: { "*": 'http://localhost:8080' },
+    proxy: { "*": 'http://localhost:7979' },
     hot: true
 
 }).listen(4000, 'localhost', function (err, result) {
