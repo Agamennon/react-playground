@@ -77,7 +77,7 @@ app.get('/comments', function (req, res) {
         function(result){
             setTimeout(function(){
                 res.send(result);
-            },2000);
+            },0);
 
         },
         function(error){

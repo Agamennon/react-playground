@@ -59,7 +59,7 @@ module.exports = React.createClass({
         console.log(z);
         return (
             <div>
-                <h1  onClick={this.handleClick}>Dashboards</h1>
+                <h1  onClick={this.handleClick}>Dashboard</h1>
                 <div> hello too </div>
             </div>
         );

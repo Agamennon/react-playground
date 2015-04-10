@@ -11,7 +11,10 @@ var RouteHandler = Router.RouteHandler;
 //mock data
 
 
+
 var CommentBox = React.createClass({
+
+    interval:'',
 
     getInitialState: function(){
         return {data:[]}
@@ -31,7 +34,12 @@ var CommentBox = React.createClass({
 
     componentDidMount: function() {
         this.loadCommentsFromServer();
-        setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+        this.interval = setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+    },
+
+    componentWillUnmount: function(){
+       // console.log(interval);
+       clearInterval(this.interval);
     },
 
     handleCommentSubmit: function(comment) {
