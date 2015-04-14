@@ -54,7 +54,7 @@ var CommentBox = React.createClass({
                 }
                 else
                     console.log(err);
-            }.bind(this)
+           }.bind(this)
         );
 
 

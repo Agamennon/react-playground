@@ -53,13 +53,14 @@ module.exports = React.createClass({
 
 
     render: function () {
+        var sty = {color : 'red'};
         var x = 66;
         var y = 90 ;
         var z = x + y;
         console.log(z);
         return (
             <div>
-                <h1  onClick={this.handleClick}>Dashboard</h1>
+                <h1 style={sty} onClick={this.handleClick}>Dashboard</h1>
                 <div> hello too </div>
             </div>
         );
