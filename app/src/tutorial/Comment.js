@@ -1,5 +1,5 @@
 var Showdown = require('showdown');
-var converter =  new Showdown.converter();
+var converter =  new Showdown.Converter();
 var Comment = React.createClass({
     deleteHandler:function(){
         console.log('will delete');

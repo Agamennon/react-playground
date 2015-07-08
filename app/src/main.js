@@ -1,33 +1,42 @@
 
 var DefaultRoute = Router.DefaultRoute;
-var Link = Router.Link;
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
 
+var NoteMain = require ('./notes/note-main.jsx');
+var Reflux = require ('./reflux/reflux.jsx');
+var Components = require ('./gui-react-components/components.jsx');
+//import {Components} from './gui-react-components/components.jsx';
+
 var Tutorial = require ('./tutorial/Tutorial.js');
+var GuiComboTest = require ('./guicombo/guicombotest.jsx');
 var Thinking = require ('./thinking/Thinking.jsx');
+var Material = require ('./material/Material.jsx');
 var Inbox = require('./Inbox.js');
 var Calendar = require('./Calendar.js');
 var Dashboard = require('./Dashboard.js');
+var Menu = require('./menu/menu.jsx');
+var Link = Router.Link;
+
+require("./style/app.scss");
+require("./style/main-nav.scss");
+require("./style/flexbox.scss");
+
+
+//require('./style/material.less');
 
 var App = React.createClass({
     render: function () {
+
+
         return (
-            <div>
-                <header>
-                    <ul>
-                        <li><Link to="tutorial">Tutorial</Link></li>
-                        <li><Link to="thinking">Thinking</Link></li>
-                        <li><Link to="app">Dashboard</Link></li>
-                        <li><Link to="inbox">Inbox</Link></li>
-                        <li><Link to="calendar">Calendar</Link></li>
-                    </ul>
-
-                </header>
-
-                {/* this is the important part */}
-                <RouteHandler {...this.props}/>
+            <div className="fill-all app-container">
+             <Menu/>
+                <div className="fill-all app">
+                    <RouteHandler {...this.props}/>
+                </div>
             </div>
+
         );
     }
 });
@@ -36,8 +45,13 @@ var App = React.createClass({
 
 var routes = (
     <Route name="app" path="/" handler={App}>
+        <Route name="notes"  handler={NoteMain}/>
+        <Route name="reflux"  handler={Reflux}/>
+        <Route name="components"  handler={Components}/>
         <Route name="tutorial"  handler={Tutorial}/>
+        <Route name="guicombotest"  handler={GuiComboTest}/>
         <Route name="thinking"  handler={Thinking}/>
+        <Route name="material"  handler={Material}/>
         <Route name="inbox" handler={Inbox}/>
         <Route name="calendar" handler={Calendar}/>
         <DefaultRoute handler={Dashboard}/>
@@ -50,10 +64,35 @@ Router.run(routes, function (Handler) {
     React.render(<Handler />, document.body);
 });
 
-
+/*      <Route name="material"  handler={Material}/>*/
 
 //var AppComponent = require('./AppComponent.js');
 //React.render(<AppComponent/>, document.body);
+
+
+
+/*
+
+
+
+ <div className='Grid'>
+
+ <li className="Gird-cell"><Link to="notes">NoteApp</Link></li>
+ <li className="Gird-cell"><Link to="tutorial">Tutorial</Link></li>
+ <li className="Gird-cell"><Link to="guicombotest">GuiComboTest</Link></li>
+ <li className="Gird-cell"><Link to="thinking">Thinking</Link></li>
+ <li className="Gird-cell"><Link to="material">Material</Link></li>
+ <li className="Gird-cell"><Link to="app">Dashboard</Link></li>
+ <li className="Gird-cell"><Link to="inbox">Inbox</Link></li>
+ <li className="Gird-cell"><Link to="calendar">Calendar</Link></li>
+
+
+
+ {/!* this is the important part *!/}
+ <div className='Grid'>
+ <RouteHandler {...this.props}/>
+ </div>
+ </div>*/
 
 
 

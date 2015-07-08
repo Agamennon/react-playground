@@ -1,0 +1,56 @@
+
+.main-nav {
+
+  background: #eee;
+  position: relative;
+  z-index: 1;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+
+  a {
+    padding: 1.25rem 0.9rem;
+    font-size: 1.6rem;
+    max-width: 140px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    color: #333;
+    &:hover, &:focus {
+      background: #ccc;
+      color: black;
+      span {
+        color: black;
+      }
+    }
+  }
+  span {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #888;
+    margin: 0.25rem 0 0 0;
+  }
+
+
+}
+
+
+@media (min-width: 1000px) {
+  .main-nav {
+    a {
+      max-width: 500px;
+      font-size: 2rem;
+    }
+    .icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

@@ -15,10 +15,44 @@ export default class Inbox extends React.Component {
         var z = x + y;
         console.log(z);
         return (
-            <div>
-                <h1  onClick={this.handleClick}>Inboxxx</h1>
-                <div> hello Inbox </div>
+            <div className="flex-row flex-wrap fill-all red">
+                <div className="flex-item blue">
+                    <h1  onClick={this.handleClick}>Inboxxx</h1>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                    <div> hello link </div>
+                </div>
+
+                <div  className="flex-item yellow"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+                <div  className="flex-item"> hello Inbox </div>
+
             </div>
+
         );
     }
 

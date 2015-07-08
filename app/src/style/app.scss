@@ -1,0 +1,64 @@
+
+.fill-all {
+    width:100%;
+    height:100%;
+}
+.fill-w {
+    width: 100%;
+}
+.fill-h {
+    height: 100%;
+}
+.float-left {
+  float: left;
+}
+
+div.red {
+  background-color: red;
+}
+div.blue {
+  background-color: blue;
+}
+div.yellow {
+  background-color: yellow;
+}
+
+/*box-sizing reset*/
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.app-container {
+  margin-top: -99px;
+  padding-top: 99px;
+  width:100%;
+  height:100%;
+}
+
+.app {
+
+}
+
+
+.magic {
+  transition: all 500ms ease;
+  box-sizing: border-box;
+}

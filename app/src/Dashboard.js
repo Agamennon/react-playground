@@ -60,8 +60,8 @@ module.exports = React.createClass({
         console.log(z);
         return (
             <div>
-                <h1 style={sty} onClick={this.handleClick}>Dashboard</h1>
-                <div> hello too </div>
+                <h1 style={sty} onClick={this.handleClick}>Dashboarddd</h1>
+                <div> hello toooooo </div>
             </div>
         );
     }

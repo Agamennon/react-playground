@@ -1,32 +1,51 @@
 {
   "name": "play",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A boilerplate for running a Webpack workflow in Node express",
   "main": "server.js",
   "scripts": {
-    "base": "webpack --config webpack.base.config.js",
-    "hot": "node webpack.hot.proxy.js",
-    "hot-noproxy": "node webpack.hot.js",
-    "dev": "node webpack.dev.server.js",
-    "start": "node app/backend/server.js"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^5.0.7",
-    "babel-loader": "^5.0.0",
-    "babel-runtime": "^5.0.7",
-    "express": "^4.12.3",
-    "react-hot-loader": "^1.2.4",
-    "webpack": "^1.7.3",
-    "webpack-dev-server": "^1.8.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
   },
+  "author": "Guilherme Guerchmann",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.12.2",
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.3.1",
+    "body-parser": "^1.13.2",
+    "classnames": "^2.1.3",
+    "color": "^0.10.1",
+    "css-loader": "^0.10.1",
+    "express": "^4.12.3",
+    "json-loader": "^0.5.2",
+    "lodash": "^3.10.0",
     "multer": "^0.1.8",
-    "react": "^0.13.1",
-    "react-router": "^0.13.2",
-    "rethinkdb": "^1.16.2",
-    "superagent": "^1.1.0"
+    "node-libs-browser": "^0.5.2",
+    "radium": "^0.13.2",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "reflux": "^0.2.8",
+    "sass-loader": "^1.0.2",
+    "showdown": "^1.1.0",
+    "style-loader": "^0.10.2",
+    "superagent": "^1.2.0",
+    "webpack": "^1.10.1"
+  },
+  "devDependencies": {
+    "core-js": "^0.9.18",
+    "install": "^0.1.8",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.37",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-cli": "^0.1.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-webpack": "^1.5.1",
+    "react-hot-loader": "^1.2.7",
+    "webpack-dev-server": "^1.8.0"
   }
 }

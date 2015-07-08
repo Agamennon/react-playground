@@ -23,7 +23,7 @@ var SearchBar = React.createClass({
                         onChange={this.handleChange}
                         />
                     {' '}
-                    Only show products in stock
+                    Only show products in stockkk
                 </p>
             </form>
         );
