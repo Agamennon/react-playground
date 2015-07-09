@@ -14,6 +14,7 @@ var noteCreationBox = React.createClass({
     },
 
     onTitleEdit : function(e){
+        console.log('eeeeeeee');
         var val = true;
         if (e.target.value.length < 1)
             val = false;

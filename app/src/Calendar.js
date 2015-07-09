@@ -17,8 +17,8 @@ export default class Calendar extends React.Component {
         console.log(z);
         return (
             <div>
-                <h1  onClick={this.handleClick}>Calendkr</h1>
-                <div> hello Calendar </div>
+                <h1  onClick={this.handleClick}>Calendkreeeeeeee</h1>
+                <div> hello Calendaeeeeer </div>
             </div>
         );
     }

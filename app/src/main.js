@@ -1,3 +1,12 @@
+/*import {Components} from './gui-react-components/components.jsx';
+
+
+React.render(<Components />, document.body);
+
+module.hot.accept();*/
+
+
+
 
 var DefaultRoute = Router.DefaultRoute;
 var Route = Router.Route;
@@ -5,8 +14,8 @@ var RouteHandler = Router.RouteHandler;
 
 var NoteMain = require ('./notes/note-main.jsx');
 var Reflux = require ('./reflux/reflux.jsx');
-var Components = require ('./gui-react-components/components.jsx');
-//import {Components} from './gui-react-components/components.jsx';
+//var Components = require ('./gui-react-components/components.jsx');
+import {Components} from './gui-react-components/components.jsx';
 
 var Tutorial = require ('./tutorial/Tutorial.js');
 var GuiComboTest = require ('./guicombo/guicombotest.jsx');
@@ -63,6 +72,28 @@ var routes = (
 Router.run(routes, function (Handler) {
     React.render(<Handler />, document.body);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*      <Route name="material"  handler={Material}/>*/
 

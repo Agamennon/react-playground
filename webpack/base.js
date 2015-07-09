@@ -19,7 +19,9 @@ module.exports = {
         loaders: [
             {
                 test: /\.jsx?$/,
-                loaders: ['babel?optional=runtime&stage=2'],
+                loaders: ['babel?stage=0'], //default 2
+               // loaders: ['babel?optional=runtime&stage=0'], //default 2
+                include: path.join(p.root, 'app', 'src'),
                 exclude: [p.node,p.build]
             },
             {

@@ -76,7 +76,7 @@ var noteApp = React.createClass({
         return (
             <div className="fill-all">
                 <div>
-                    <button onClick={this.newNote}>New Note</button>
+                    <button onClick={this.newNote}>New Noteee</button>
                     <button onClick={this.deleteNote.bind(this,this.state.notes,this.state.selectedID)}>Delete Note</button>
                     <button onClick={actions.onSomeEvent}>Save</button>
                 </div>

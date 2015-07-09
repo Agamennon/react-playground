@@ -7,6 +7,7 @@ module.exports = function(mode,port,dev_port){
         case 'development':  webpackFile = './development.js'; break;
         case 'hot':  webpackFile = './hot.js'; break;
         case 'production': webpackFile ='./production.js'; break;
+        case 'hotify': webpackFile ='./hotify.js'; break;
         case 'test': webpackFile ='./test.js'; break;
     }
 
@@ -28,6 +29,7 @@ module.exports = function(mode,port,dev_port){
             hot: true,
             quiet: false,
             noInfo: true,
+            historyApiFallback: true,
             stats: {
                 progress:true,
                 colors: true
